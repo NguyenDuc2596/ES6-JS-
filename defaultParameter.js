@@ -1,18 +1,22 @@
 // ES5
-// function congHaiSo(x, y) {
-//     if (y === undefined) {
-//         y = 2
-//     }
-//     return x + y
-// }
-// const tong = congHaiSo(4, 5);
-// console.log(tong);
-/////////////////////////////////////////////
-//ES6
-// const congHaiSo = (x, y = 2) => x + y    // khai báo ArrowFunction
-//const tong = congHaiSo(3)
-//const tong = congHaiSo(3, 5)
-//console.log(tong); //nếu không gán giá trị cho y thì mặc định giá trị y =2
+function congHaiSo(x, y) {
+    if (y === undefined) {
+        y = 2
+    }
+    return x + y
+}
+const tongxy = congHaiSo(4, 5);
+console.log(tongxy); // giá trị nhận được là 9 ; 
+
+const tong = congHaiSo(3)
+console.log(tong);// giá trị nhận được là 5(không cho giá trị y, mặc định y =2)
+
+//////////////////////////////////////////////////////////
+                               //ES6//
+const congHaiSo = (x, y = 2) => x + y    // khai báo ArrowFunction
+const tong = congHaiSo(3) ; console.log(tong) // giá trị sẽ là 5
+const tong = congHaiSo(3, 5); console.log(tong);// giá trị sẽ là 8
+
 //----> cái trên chính là tham số mặc định(defaultParameter)
  const nhanHaiSo =(x,y =5) => x*y
  const tich =nhanHaiSo(3)

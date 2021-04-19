@@ -17,9 +17,9 @@ const traiCay = ['cam', 'tao', 'buoi']
 // console.log(`Trai cay so 2 la ${traicay[2]}`);
 // // //Trái cây bị lặp lại
 
-/////////////////Destructure///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////Destructure///////////////////////////////////////////////////////////////////
 // Với OJ
-const { anSang, anTrua, anToi } = buaAn // buaAn là OJ, ta bẻ cái OJ ra thành 3 cái
+const { anSang, anTrua, anToi } = buaAn // buaAn là OJ, ta bẻ cái OJ ra thành 3 cái biến
 //3 cái tên biến  này phải trùng tên với 3 cái key của OJ buaAn, 
 //Làm như trên lấy dữ liệu của cái key gán cho từng biến(vd:Biến anSang giờ nhận giá trị 'Com')
 console.log(`Sang nay toi an ${anSang}`);
